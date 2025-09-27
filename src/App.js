@@ -1,8 +1,6 @@
 function App() {
   const Greeting = ({ name }) => <h1>Привіт, {name}!</h1>;
-
   const Message = ({ text }) => <p>{text}</p>;
-
   const Button = ({ onClick }) => (
     <button onClick={onClick}>Натисни мене</button>
   );
@@ -14,7 +12,7 @@ function App() {
   return (
     <div>
       <Greeting name="Андрій" />
-      <Message text="Що робиш?." />
+      <Message text="Що робиш?" />
       <Button onClick={handleClick} />
     </div>
   );
